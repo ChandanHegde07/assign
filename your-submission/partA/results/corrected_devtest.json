@@ -1,0 +1,222 @@
+{
+  "gpt2": {
+    "eng_Latn": {
+      "tokens": 27044,
+      "words": 21901,
+      "graphemes": 131966,
+      "bytes": 132096,
+      "codepoints": 131966
+    },
+    "hin_Deva": {
+      "tokens": 200688,
+      "words": 25643,
+      "graphemes": 85957,
+      "bytes": 337439,
+      "codepoints": 131180
+    },
+    "kan_Knda": {
+      "tokens": 367366,
+      "words": 16100,
+      "graphemes": 90371,
+      "bytes": 375341,
+      "codepoints": 138027
+    },
+    "tam_Taml": {
+      "tokens": 420171,
+      "words": 16775,
+      "graphemes": 99724,
+      "bytes": 421635,
+      "codepoints": 154131
+    },
+    "tel_Telu": {
+      "tokens": 350748,
+      "words": 16938,
+      "graphemes": 76567,
+      "bytes": 353661,
+      "codepoints": 132465
+    },
+    "mal_Mlym": {
+      "tokens": 409983,
+      "words": 14930,
+      "graphemes": 79428,
+      "bytes": 411741,
+      "codepoints": 149332
+    }
+  },
+  "cl100k_base": {
+    "eng_Latn": {
+      "tokens": 27182,
+      "words": 21901,
+      "graphemes": 131966,
+      "bytes": 132096,
+      "codepoints": 131966
+    },
+    "hin_Deva": {
+      "tokens": 129573,
+      "words": 25643,
+      "graphemes": 85957,
+      "bytes": 337439,
+      "codepoints": 131180
+    },
+    "kan_Knda": {
+      "tokens": 240716,
+      "words": 16100,
+      "graphemes": 90371,
+      "bytes": 375341,
+      "codepoints": 138027
+    },
+    "tam_Taml": {
+      "tokens": 207768,
+      "words": 16775,
+      "graphemes": 99724,
+      "bytes": 421635,
+      "codepoints": 154131
+    },
+    "tel_Telu": {
+      "tokens": 225253,
+      "words": 16938,
+      "graphemes": 76567,
+      "bytes": 353661,
+      "codepoints": 132465
+    },
+    "mal_Mlym": {
+      "tokens": 242924,
+      "words": 14930,
+      "graphemes": 79428,
+      "bytes": 411741,
+      "codepoints": 149332
+    }
+  },
+  "o200k_base": {
+    "eng_Latn": {
+      "tokens": 26873,
+      "words": 21901,
+      "graphemes": 131966,
+      "bytes": 132096,
+      "codepoints": 131966
+    },
+    "hin_Deva": {
+      "tokens": 42247,
+      "words": 25643,
+      "graphemes": 85957,
+      "bytes": 337439,
+      "codepoints": 131180
+    },
+    "kan_Knda": {
+      "tokens": 52886,
+      "words": 16100,
+      "graphemes": 90371,
+      "bytes": 375341,
+      "codepoints": 138027
+    },
+    "tam_Taml": {
+      "tokens": 53195,
+      "words": 16775,
+      "graphemes": 99724,
+      "bytes": 421635,
+      "codepoints": 154131
+    },
+    "tel_Telu": {
+      "tokens": 51841,
+      "words": 16938,
+      "graphemes": 76567,
+      "bytes": 353661,
+      "codepoints": 132465
+    },
+    "mal_Mlym": {
+      "tokens": 52580,
+      "words": 14930,
+      "graphemes": 79428,
+      "bytes": 411741,
+      "codepoints": 149332
+    }
+  },
+  "xlm-roberta-base": {
+    "eng_Latn": {
+      "tokens": 30661,
+      "words": 21901,
+      "graphemes": 131966,
+      "bytes": 132096,
+      "codepoints": 131966
+    },
+    "hin_Deva": {
+      "tokens": 38221,
+      "words": 25643,
+      "graphemes": 85957,
+      "bytes": 337439,
+      "codepoints": 131180
+    },
+    "kan_Knda": {
+      "tokens": 41459,
+      "words": 16100,
+      "graphemes": 90371,
+      "bytes": 375341,
+      "codepoints": 138027
+    },
+    "tam_Taml": {
+      "tokens": 41354,
+      "words": 16775,
+      "graphemes": 99724,
+      "bytes": 421635,
+      "codepoints": 154131
+    },
+    "tel_Telu": {
+      "tokens": 40372,
+      "words": 16938,
+      "graphemes": 76567,
+      "bytes": 353661,
+      "codepoints": 132465
+    },
+    "mal_Mlym": {
+      "tokens": 42190,
+      "words": 14930,
+      "graphemes": 79428,
+      "bytes": 411741,
+      "codepoints": 149332
+    }
+  },
+  "ai4bharat/IndicBERTv2-MLM-only": {
+    "eng_Latn": {
+      "tokens": 27078,
+      "words": 21901,
+      "graphemes": 131966,
+      "bytes": 132096,
+      "codepoints": 131966
+    },
+    "hin_Deva": {
+      "tokens": 31661,
+      "words": 25643,
+      "graphemes": 85957,
+      "bytes": 337439,
+      "codepoints": 131180
+    },
+    "kan_Knda": {
+      "tokens": 29715,
+      "words": 16100,
+      "graphemes": 90371,
+      "bytes": 375341,
+      "codepoints": 138027
+    },
+    "tam_Taml": {
+      "tokens": 28439,
+      "words": 16775,
+      "graphemes": 99724,
+      "bytes": 421635,
+      "codepoints": 154131
+    },
+    "tel_Telu": {
+      "tokens": 28780,
+      "words": 16938,
+      "graphemes": 76567,
+      "bytes": 353661,
+      "codepoints": 132465
+    },
+    "mal_Mlym": {
+      "tokens": 29880,
+      "words": 14930,
+      "graphemes": 79428,
+      "bytes": 411741,
+      "codepoints": 149332
+    }
+  }
+}

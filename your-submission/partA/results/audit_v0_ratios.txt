@@ -1,0 +1,20 @@
+
+[F2] macro-average (per-line mean) vs micro-average (sum/sum)
+     macro (reported style) = 7.4485
+     micro (aggregate)      = 7.4032   delta = +0.61%
+
+[F3] lower() vs original case
+     tok/word lowered = 7.4032   original = 7.4032   delta = +0.00%
+
+[F4] denominator: codepoint len() vs grapheme clusters
+     tot_codepoints = 290   tot_graphemes = 188   inflation = +54.26%
+     tok/codepoint = 1.5828   tok/grapheme = 2.4415
+
+===== RATIOS (baseline vs each correction) =====
+v0 reported hindi/eng fertility ratio = 5.887
+  micro ratio [split(' '), lower]= 5.908
+  micro ratio [split(' '), rawcase]= 6.092
+  micro ratio [split(), lower]= 5.928
+  micro ratio [split(), rawcase]= 6.114
+  macro ratio [lower] = 5.887
+  macro ratio [rawcase] = 6.059

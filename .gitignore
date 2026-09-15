@@ -1,0 +1,19 @@
+# Virtual environment
+.venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.ipynb_checkpoints/
+
+# Provided materials (not part of the submission)
+starter_kit/
+AI ASSIGNMENT 2026.pdf
+
+# macOS
+.DS_Store

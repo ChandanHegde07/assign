@@ -1,0 +1,48 @@
+LINES WITH MULTIPLE CONSECUTIVE SPACES
+  eng line 7: 'Please keep the books  in the cupboard.'  -> split(' ')=8 tokens, split()=7
+  hin line 10: 'किताबें  अलमारी में रखी हैं।'  -> split(' ')=6 tokens, split()=5
+
+===== eng (/Volumes/Fire/Projects 2.0/Flam/your-submission/partA/../../starter_kit/corpus_sample/eng_sample.txt) : 10 lines =====
+v0 baseline: fertility=1.2652 tok/word   tok/char=0.2256
+
+[F1] split(' ') vs split()
+     spurious empty 'words' from split(' '): 1
+     micro tok/word  split(' ') = 1.2532   split() = 1.2692   delta = +1.28%
+
+[F2] macro-average (per-line mean) vs micro-average (sum/sum)
+     macro (reported style) = 1.2652
+     micro (aggregate)      = 1.2532   delta = +0.96%
+
+[F3] lower() vs original case
+     tok/word lowered = 1.2532   original = 1.2152   delta = -3.03%
+
+[F4] denominator: codepoint len() vs grapheme clusters
+     tot_codepoints = 448   tot_graphemes = 448   inflation = +0.00%
+     tok/codepoint = 0.2210   tok/grapheme = 0.2210
+
+===== hin (/Volumes/Fire/Projects 2.0/Flam/your-submission/partA/../../starter_kit/corpus_sample/hin_sample.txt) : 10 lines =====
+v0 baseline: fertility=7.4485 tok/word   tok/char=1.5791
+
+[F1] split(' ') vs split()
+     spurious empty 'words' from split(' '): 1
+     micro tok/word  split(' ') = 7.4032   split() = 7.5246   delta = +1.64%
+
+[F2] macro-average (per-line mean) vs micro-average (sum/sum)
+     macro (reported style) = 7.4485
+     micro (aggregate)      = 7.4032   delta = +0.61%
+
+[F3] lower() vs original case
+     tok/word lowered = 7.4032   original = 7.4032   delta = +0.00%
+
+[F4] denominator: codepoint len() vs grapheme clusters
+     tot_codepoints = 290   tot_graphemes = 188   inflation = +54.26%
+     tok/codepoint = 1.5828   tok/grapheme = 2.4415
+
+===== RATIOS (baseline vs each correction) =====
+v0 reported hindi/eng fertility ratio = 5.887
+  micro ratio [split(' '), lower]= 5.908
+  micro ratio [split(' '), rawcase]= 6.092
+  micro ratio [split(), lower]= 5.928
+  micro ratio [split(), rawcase]= 6.114
+  macro ratio [lower] = 5.887
+  macro ratio [rawcase] = 6.059

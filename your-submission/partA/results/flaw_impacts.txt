@@ -1,0 +1,53 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+========================================================================
+CORPUS: TOY (10 lines/lang)
+========================================================================
+
+### v0 baseline (lower, split(' '), per-line mean)
+  eng=1.2652  hin=7.4485  ratio=5.887
+
+### FIX-1  split(' ') -> split()  [code bug: empty tokens]
+  eng=1.2831 (+1.41%)  hin=7.5985 (+2.01%)  ratio=5.922 (was 5.887)
+
+### FIX-2  per-line mean -> aggregate token/word  [macro vs micro]
+  eng=1.2692 (-1.08% vs fixed-macro)  hin=7.5246 (-0.97%)  ratio=5.928
+
+### FLAW-3  lower() removed  [English-only, corpus-dependent]
+  eng=1.2293 (-2.84%)  hin=7.4485 (+0.00%)  ratio=6.059
+
+### FLAW-4  denominator: tok/word vs tok/grapheme vs tok/codepoint
+  tok/word      eng=1.2532 hin=7.4032 ratio=5.908
+  tok/grapheme  eng=0.2210 hin=2.4415 ratio=11.048
+  tok/byte      eng=0.2210 hin=0.6008 ratio=2.719
+  (v0 tok/char uses code points: eng_cp=448 hin_cp=290; graphemes eng=448 hin=188; utf8_bytes eng=448 hin=764; hin codepoint/grapheme inflation=54.3%)
+========================================================================
+CORPUS: FLORES devtest (1012)
+========================================================================
+
+### v0 baseline (lower, split(' '), per-line mean)
+  eng=1.2874  hin=7.8651  ratio=6.109
+
+### FIX-1  split(' ') -> split()  [code bug: empty tokens]
+  eng=1.2874 (+0.00%)  hin=7.8669 (+0.02%)  ratio=6.111 (was 6.109)
+
+### FIX-2  per-line mean -> aggregate token/word  [macro vs micro]
+  eng=1.2782 (-0.71% vs fixed-macro)  hin=7.8265 (-0.51%)  ratio=6.123
+
+### FLAW-3  lower() removed  [English-only, corpus-dependent]
+  eng=1.2444 (-3.34%)  hin=7.8647 (-0.00%)  ratio=6.320
+
+### FLAW-4  denominator: tok/word vs tok/grapheme vs tok/codepoint
+  tok/word      eng=1.2782 hin=7.8247 ratio=6.122
+  tok/grapheme  eng=0.2121 hin=2.3348 ratio=11.007
+  tok/byte      eng=0.2119 hin=0.5948 ratio=2.807
+  (v0 tok/char uses code points: eng_cp=131966 hin_cp=131180; graphemes eng=131966 hin=85957; utf8_bytes eng=132096 hin=337439; hin codepoint/grapheme inflation=52.6%)
+
+========================================================================
+SUSPICIOUS-BUT-CORRECT: HF tokenizer add_special_tokens=False
+========================================================================
+  'Bengaluru International Airport handled '   False=11 True=13 (+2 special: ['<s>', '</s>'])
+  'The Quarterly Review meeting moved to Th'   False=10 True=12 (+2 special: ['<s>', '</s>'])
+  'I bought this book yesterday from a smal'   False=13 True=15 (+2 special: ['<s>', '</s>'])
+  -> add_special_tokens=False is CORRECT: special tokens are added by the
+     serving pipeline, not part of the text's token cost.

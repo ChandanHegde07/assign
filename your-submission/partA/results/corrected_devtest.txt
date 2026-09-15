@@ -1,0 +1,86 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+corpus: FLORES-200 devtest, 1012 parallel sentences, 6 languages
+tokenizers: ['gpt2', 'cl100k_base', 'o200k_base', 'xlm-roberta-base', 'ai4bharat/IndicBERTv2-MLM-only']
+
+=================== tokenizer: gpt2 ===================
+lang   tok/sent  tok/word  tok/grapheme  tok/byte tok/codepoint
+---------------------------------------------------------------
+eng       26.72     1.235         0.205     0.205         0.205
+hin      198.31     7.826         2.335     0.595         1.530
+kan      363.01    22.818         4.065     0.979         2.662
+tam      415.19    25.047         4.213     0.997         2.726
+tel      346.59    20.708         4.581     0.992         2.648
+mal      405.12    27.460         5.162     0.996         2.745
+  ratios vs English (same parallel sentences):
+    hin  tok/sentence=7.42x  tok/word=6.34x  tok/grapheme=11.39x  tok/byte=2.90x  tok/codepoint=7.47x   | paired/sent mean=7.51x median=7.40x
+    kan  tok/sentence=13.58x  tok/word=18.48x  tok/grapheme=19.84x  tok/byte=4.78x  tok/codepoint=12.99x   | paired/sent mean=13.75x median=13.50x
+    tam  tok/sentence=15.54x  tok/word=20.28x  tok/grapheme=20.56x  tok/byte=4.87x  tok/codepoint=13.30x   | paired/sent mean=15.77x median=15.60x
+    tel  tok/sentence=12.97x  tok/word=16.77x  tok/grapheme=22.35x  tok/byte=4.84x  tok/codepoint=12.92x   | paired/sent mean=13.17x median=12.95x
+    mal  tok/sentence=15.16x  tok/word=22.24x  tok/grapheme=25.19x  tok/byte=4.86x  tok/codepoint=13.40x   | paired/sent mean=15.34x median=15.14x
+
+=================== tokenizer: cl100k_base ===================
+lang   tok/sent  tok/word  tok/grapheme  tok/byte tok/codepoint
+---------------------------------------------------------------
+eng       26.86     1.241         0.206     0.206         0.206
+hin      128.04     5.053         1.507     0.384         0.988
+kan      237.86    14.951         2.664     0.641         1.744
+tam      205.30    12.386         2.083     0.493         1.348
+tel      222.58    13.299         2.942     0.637         1.700
+mal      240.04    16.271         3.058     0.590         1.627
+  ratios vs English (same parallel sentences):
+    hin  tok/sentence=4.77x  tok/word=4.07x  tok/grapheme=7.32x  tok/byte=1.87x  tok/codepoint=4.80x   | paired/sent mean=4.83x median=4.76x
+    kan  tok/sentence=8.86x  tok/word=12.05x  tok/grapheme=12.93x  tok/byte=3.12x  tok/codepoint=8.47x   | paired/sent mean=8.97x median=8.82x
+    tam  tok/sentence=7.64x  tok/word=9.98x  tok/grapheme=10.11x  tok/byte=2.39x  tok/codepoint=6.54x   | paired/sent mean=7.76x median=7.68x
+    tel  tok/sentence=8.29x  tok/word=10.71x  tok/grapheme=14.28x  tok/byte=3.10x  tok/codepoint=8.26x   | paired/sent mean=8.43x median=8.28x
+    mal  tok/sentence=8.94x  tok/word=13.11x  tok/grapheme=14.85x  tok/byte=2.87x  tok/codepoint=7.90x   | paired/sent mean=9.05x median=8.90x
+
+=================== tokenizer: o200k_base ===================
+lang   tok/sent  tok/word  tok/grapheme  tok/byte tok/codepoint
+---------------------------------------------------------------
+eng       26.55     1.227         0.204     0.203         0.204
+hin       41.75     1.648         0.491     0.125         0.322
+kan       52.26     3.285         0.585     0.141         0.383
+tam       52.56     3.171         0.533     0.126         0.345
+tel       51.23     3.061         0.677     0.147         0.391
+mal       51.96     3.522         0.662     0.128         0.352
+  ratios vs English (same parallel sentences):
+    hin  tok/sentence=1.57x  tok/word=1.34x  tok/grapheme=2.41x  tok/byte=0.62x  tok/codepoint=1.58x   | paired/sent mean=1.59x median=1.57x
+    kan  tok/sentence=1.97x  tok/word=2.68x  tok/grapheme=2.87x  tok/byte=0.69x  tok/codepoint=1.88x   | paired/sent mean=1.98x median=1.96x
+    tam  tok/sentence=1.98x  tok/word=2.58x  tok/grapheme=2.62x  tok/byte=0.62x  tok/codepoint=1.69x   | paired/sent mean=2.00x median=1.96x
+    tel  tok/sentence=1.93x  tok/word=2.49x  tok/grapheme=3.32x  tok/byte=0.72x  tok/codepoint=1.92x   | paired/sent mean=1.95x median=1.93x
+    mal  tok/sentence=1.96x  tok/word=2.87x  tok/grapheme=3.25x  tok/byte=0.63x  tok/codepoint=1.73x   | paired/sent mean=1.97x median=1.93x
+
+=================== tokenizer: xlm-roberta-base ===================
+lang   tok/sent  tok/word  tok/grapheme  tok/byte tok/codepoint
+---------------------------------------------------------------
+eng       30.30     1.400         0.232     0.232         0.232
+hin       37.77     1.491         0.445     0.113         0.291
+kan       40.97     2.575         0.459     0.110         0.300
+tam       40.86     2.465         0.415     0.098         0.268
+tel       39.89     2.384         0.527     0.114         0.305
+mal       41.69     2.826         0.531     0.102         0.283
+  ratios vs English (same parallel sentences):
+    hin  tok/sentence=1.25x  tok/word=1.06x  tok/grapheme=1.91x  tok/byte=0.49x  tok/codepoint=1.25x   | paired/sent mean=1.25x median=1.25x
+    kan  tok/sentence=1.35x  tok/word=1.84x  tok/grapheme=1.97x  tok/byte=0.48x  tok/codepoint=1.29x   | paired/sent mean=1.36x median=1.33x
+    tam  tok/sentence=1.35x  tok/word=1.76x  tok/grapheme=1.78x  tok/byte=0.42x  tok/codepoint=1.15x   | paired/sent mean=1.36x median=1.35x
+    tel  tok/sentence=1.32x  tok/word=1.70x  tok/grapheme=2.27x  tok/byte=0.49x  tok/codepoint=1.31x   | paired/sent mean=1.33x median=1.31x
+    mal  tok/sentence=1.38x  tok/word=2.02x  tok/grapheme=2.29x  tok/byte=0.44x  tok/codepoint=1.22x   | paired/sent mean=1.38x median=1.36x
+
+=================== tokenizer: ai4bharat/IndicBERTv2-MLM-only ===================
+lang   tok/sent  tok/word  tok/grapheme  tok/byte tok/codepoint
+---------------------------------------------------------------
+eng       26.76     1.236         0.205     0.205         0.205
+hin       31.29     1.235         0.368     0.094         0.241
+kan       29.36     1.846         0.329     0.079         0.215
+tam       28.10     1.695         0.285     0.067         0.185
+tel       28.44     1.699         0.376     0.081         0.217
+mal       29.53     2.001         0.376     0.073         0.200
+  ratios vs English (same parallel sentences):
+    hin  tok/sentence=1.17x  tok/word=1.00x  tok/grapheme=1.80x  tok/byte=0.46x  tok/codepoint=1.18x   | paired/sent mean=1.18x median=1.17x
+    kan  tok/sentence=1.10x  tok/word=1.49x  tok/grapheme=1.60x  tok/byte=0.39x  tok/codepoint=1.05x   | paired/sent mean=1.10x median=1.09x
+    tam  tok/sentence=1.05x  tok/word=1.37x  tok/grapheme=1.39x  tok/byte=0.33x  tok/codepoint=0.90x   | paired/sent mean=1.06x median=1.04x
+    tel  tok/sentence=1.06x  tok/word=1.37x  tok/grapheme=1.83x  tok/byte=0.40x  tok/codepoint=1.06x   | paired/sent mean=1.07x median=1.06x
+    mal  tok/sentence=1.10x  tok/word=1.62x  tok/grapheme=1.83x  tok/byte=0.35x  tok/codepoint=0.98x   | paired/sent mean=1.11x median=1.09x
+
+wrote results/corrected_devtest.json
