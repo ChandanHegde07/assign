@@ -57,7 +57,7 @@ Predict `kv_cache_util = batch × seq_len / 105,329` and compare:
 | 32 | 3584 | 512 | 4096 | 1.244 | 0.97 | 7 |
 | 48 | 3584 | 512 | 4096 | 1.867 | 0.97 | 23 |
 
-Predicted utilization matches **all 10 non-preempted rows** to 2 dp. Rows 32/48
+Predicted utilization matches **all 11 non-preempted rows in the CSV** to 2 dp. Rows 32/48
 exceed 1.0, so the scheduler cannot fit them: utilization pins at 0.97 and
 sequences are preempted (7 and 23). The capacity model is confirmed across both
 prompt-length sweeps.

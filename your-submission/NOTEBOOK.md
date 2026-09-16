@@ -181,7 +181,7 @@ an input-only/formal-domain caveat.
 **R:** Subtracting weights (8.4e9 B) and 1.6 GB overhead from 0.92×24e9 B gives a
 KV budget of 12.08e9 B → **105,329 tokens → 25.72 concurrent 4096-token
 sequences**. Predicted `kv_cache_util = batch×seq/105,329` matches the log on
-**all 10 non-preempted rows** (0.16/0.31/0.62/0.93 for batches 4/8/16/24). If
+**all 11 non-preempted rows in the CSV** (0.16/0.31/0.62/0.93 for batches 4/8/16/24). If
 weights were ignored the prediction would be ~44 seqs and would not fit the log;
 if "24 GB" were GiB it would be 29 seqs (batch 24 → 0.82, not 0.93). The log
 resolves both ambiguities in favour of "decimal GB, weights subtracted".
